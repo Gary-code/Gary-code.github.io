@@ -129,3 +129,11 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+td img {
+  filter: brightness(100%);
+}
+
+td img:hover {
+  filter: brightness(80%);
+}
