@@ -1,0 +1,64 @@
+/* ------------------------------------------------------------------
+   Site-specific additions for gary-code.github.io.
+   Loaded after the academic-homepage template's main.css, so the
+   template file itself stays untouched.
+   ------------------------------------------------------------------ */
+
+/* Venue badges on paper thumbnails (same shape as .badge-acl / .badge-preprint) */
+.badge-cvpr {
+  background: linear-gradient(135deg, #00897b, #00695c);
+}
+
+.badge-mm {
+  background: linear-gradient(135deg, #7e57c2, #4527a0);
+}
+
+.badge-journal {
+  background: #3f51b5;
+}
+
+.badge-tech {
+  background: linear-gradient(135deg, #455a64, #263238);
+}
+
+/* Compact venue labels for condensed publication rows (same shape as .pub-label-acl) */
+.pub-label-cvpr {
+  color: #fff;
+  background: linear-gradient(135deg, #00897b, #00695c);
+}
+
+.pub-label-mm {
+  color: #fff;
+  background: linear-gradient(135deg, #7e57c2, #4527a0);
+}
+
+/* Extra link buttons (same shape as .btn-paper / .btn-code) */
+.btn-project,
+.btn-project:hover {
+  background: #e0f2f1;
+  color: #00796b;
+}
+
+.btn-model,
+.btn-model:hover {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+/* Keep tall teasers from stretching a paper card (side-by-side layout only) */
+@media (min-width: 48em) {
+  .paper-box .paper-box-image img {
+    width: auto;
+    max-height: 300px;
+  }
+}
+
+/* Two-line role line under the name in the sidebar */
+.author__bio + .author__bio {
+  margin-top: -0.6em;
+}
+
+/* Let a long (obfuscated) e-mail wrap instead of spilling into the content column */
+.sidebar .author__urls div {
+  overflow-wrap: anywhere;
+}
